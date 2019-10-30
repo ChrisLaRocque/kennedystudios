@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(#212933));
+  background: linear-gradient(0deg, black 0%, #212933 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#212933",GradientType=1);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 10vh;
+}
+
+.fifty-img {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sessions-bg {
+  background-image: url("https://source.unsplash.com/user/erondu/800x450");
+}
+
+@-webkit-keyframes anim1 {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim1 {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */

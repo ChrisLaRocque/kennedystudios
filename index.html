@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Live at Kennedy</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Titillium+Web:900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Main css -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+
+</head>
+<body>  
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>LIVE AT KENNEDY</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sessions">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-8 col-12 fifty-img sessions-bg anim" data-delay=".75s">
+        </div>
+        <div class="col-xl-4 col-12 fifty-blurb anim" data-delay="1s">
+          <h2>Kill me where I stand!</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quis sapiente corporis velit officia, sed delectus excepturi quisquam hic? Ea consectetur nihil dolorem fugit tempore ipsa aperiam hic, autem sit?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="studio">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-4 col-12 fifty-blurb anim" data-delay="1s">
+          <h2>Kill the studio where it stands!</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quis sapiente corporis velit officia, sed
+            delectus excepturi quisquam hic? Ea consectetur nihil dolorem fugit tempore ipsa aperiam hic, autem sit?</p>
+        </div>
+        <div class="col-xl-8 col-12 fifty-img sessions-bg anim" data-delay=".75s">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="content">
+    <div class="left">
+      <img src="https://source.unsplash.com/random/600x600" alt="" class="rando anim" data-delay="0s">
+      <p class="anim" data-delay=".7s">Woo!</p>
+      <img src="https://source.unsplash.com/user/erondu/800x450" alt="" class="anim" data-delay="1s">
+    </div>
+    <div class="right">
+      <div class="anim" data-delay="3s">
+      <h2>Oh god</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corporis repellat consectetur hic! Quam labore molestias alias quidem esse. Iusto, tempora hic veniam eius vero earum? Possimus magni explicabo perspiciatis.</p>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+  <script>
+    const images = document.querySelectorAll('.anim');
+
+    observer = new IntersectionObserver((entries) => {
+      console.log(entries.intersectionRatio);
+      entries.forEach(entry => {
+      if(entry.intersectionRatio > 0) {
+        entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
+      }
+      else {
+        entry.target.style.animation = `none`;
+      }
+      })
+    })
+    images.forEach(image => {
+    observer.observe(image);
+    })
+
+  </script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
