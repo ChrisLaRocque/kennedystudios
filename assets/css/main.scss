@@ -1,3 +1,4 @@
+@import "breakpoints.scss";
 * {
   margin: 0;
   padding: 0;
@@ -23,18 +24,41 @@ a {
   color: inherit;
   &.navbar-brand {
     font-size: 6vh;
+    @include breakpoint(phone) {
+      font-size: 4vh;
+    }
   }
 }
-section {
-  height: 100vh;
-}
-
 h1, h2, h3, h4 {
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
 }
 h1 {
   font-size: 10vh;
+}
+hr {
+  border: 2px solid white;
+  width: 50%;
+}
+button {
+  color: white;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 14px;
+  font-size: 2vh;
+  padding: 1vh;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  &:hover {
+    color: rgb(0,0,0);
+    background-color: white;
+  }
+}
+section {
+  margin: 3vh 0;
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 .fifty-img {
   height: 50vh;
@@ -43,58 +67,37 @@ h1 {
   background-repeat: no-repeat;
 }
 .sessions-bg {
-  background-image: url('https://source.unsplash.com/user/erondu/800x450');
+  background-image: url('../img/MM_Cover.png');
+  .live-at-ks, .band-name {
+    position: absolute;
+    h3 {
+      font-size: 5vh;
+    }
+  }
+  .live-at-ks {
+    top: 3vh;
+    left: 3vh;
+  }
+  .band-name {
+    bottom: 2vh;
+    right: 3vh;
+  }
 }
 
-// .content {
-//   display: grid;
-//   grid-template-columns: 70% auto;
+#header {
+  background-image: url('../img/cr_header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  .gradient-overlay {
+    background: rgb(20,20,20);
+    background: -moz-linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141414",endColorstr="#ffffff",GradientType=1);
 
-//   .left {
-//     position: relative; 
-//     text-align: center;
-//     display: grid;
-//     place-items: center;
-    
-//     p {
-//       background: white;
-//       position: absolute;
-//       margin-top: -25%;
-//       right: 17%;
-//       color: black;
-//       padding: 1em;
-//       border-radius: 15px;
-//       width: 20vw;
-//       text-align: left;
-//     }
-//   }
-
-//   .right {
-//     display: grid;
-//     place-items: center;
-
-//     h2 {
-//       color: white;
-//       font-size: 1.7rem;
-//     }
-//     p {
-//       line-height: 1.6em;
-//     }
-//   }
-//   .rando {
-//     width: 50%;
-//     position: absolute;
-//     opacity: 0;
-//   }
-//   .erondu {
-//     position: absolute;
-//     margin-top: 32%;
-//     left: 19%;
-//     width: 8vw;
-//   }
-
-// }
-
+  }
+}
 .anim {
   opacity: 0;
 }

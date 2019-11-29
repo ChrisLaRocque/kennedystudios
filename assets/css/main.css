@@ -28,8 +28,10 @@ a.navbar-brand {
   font-size: 6vh;
 }
 
-section {
-  height: 100vh;
+@media (max-width: 414px) {
+  a.navbar-brand {
+    font-size: 4vh;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -41,6 +43,35 @@ h1 {
   font-size: 10vh;
 }
 
+hr {
+  border: 2px solid white;
+  width: 50%;
+}
+
+button {
+  color: white;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 14px;
+  font-size: 2vh;
+  padding: 1vh;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+section {
+  margin: 3vh 0;
+}
+
+section:first-of-type {
+  margin-top: 0;
+}
+
 .fifty-img {
   height: 50vh;
   background-position: center;
@@ -49,7 +80,39 @@ h1 {
 }
 
 .sessions-bg {
-  background-image: url("https://source.unsplash.com/user/erondu/800x450");
+  background-image: url("../img/MM_Cover.png");
+}
+
+.sessions-bg .live-at-ks, .sessions-bg .band-name {
+  position: absolute;
+}
+
+.sessions-bg .live-at-ks h3, .sessions-bg .band-name h3 {
+  font-size: 5vh;
+}
+
+.sessions-bg .live-at-ks {
+  top: 3vh;
+  left: 3vh;
+}
+
+.sessions-bg .band-name {
+  bottom: 2vh;
+  right: 3vh;
+}
+
+#header {
+  background-image: url("../img/cr_header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+}
+
+#header .gradient-overlay {
+  background: #141414;
+  background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, #141414 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141414",endColorstr="#ffffff",GradientType=1);
 }
 
 .anim {
