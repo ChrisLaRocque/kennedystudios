@@ -44,7 +44,7 @@ h1 {
 }
 
 hr {
-  border: 2px solid white;
+  border: 3px solid white;
   width: 50%;
 }
 
@@ -79,32 +79,47 @@ section:first-of-type {
   background-repeat: no-repeat;
 }
 
-.sessions-bg {
+.fifty-img.sessions-cover {
   background-image: url("../img/MM_Cover.png");
 }
 
-.sessions-bg .live-at-ks, .sessions-bg .band-name {
+.fifty-img.sessions-cover .live-at-ks, .fifty-img.sessions-cover .band-name {
   position: absolute;
 }
 
-.sessions-bg .live-at-ks h3, .sessions-bg .band-name h3 {
+.fifty-img.sessions-cover .live-at-ks h3, .fifty-img.sessions-cover .band-name h3 {
   font-size: 5vh;
 }
 
-.sessions-bg .live-at-ks {
+.fifty-img.sessions-cover .live-at-ks {
   top: 3vh;
   left: 3vh;
 }
 
-.sessions-bg .band-name {
+.fifty-img.sessions-cover .band-name {
   bottom: 2vh;
   right: 3vh;
+}
+
+.fifty-img.studio-cover {
+  background-image: url("../img/studio-cover.jpg");
+}
+
+.fifty-img.live-cover {
+  background-image: url("../img/live-cover.jpg");
+}
+
+.fifty-img.practice-cover {
+  background-image: url("../img/practice-cover.jpg");
 }
 
 #header {
   background-image: url("../img/cr_header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#header .container-fluid {
   min-height: 50vh;
 }
 

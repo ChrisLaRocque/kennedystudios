@@ -37,7 +37,7 @@ h1 {
   font-size: 10vh;
 }
 hr {
-  border: 2px solid white;
+  border: 3px solid white;
   width: 50%;
 }
 button {
@@ -65,22 +65,31 @@ section {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.sessions-bg {
-  background-image: url('../img/MM_Cover.png');
-  .live-at-ks, .band-name {
-    position: absolute;
-    h3 {
-      font-size: 5vh;
+  &.sessions-cover {
+    background-image: url('../img/MM_Cover.png');
+    .live-at-ks, .band-name {
+      position: absolute;
+      h3 {
+        font-size: 5vh;
+      }
+    }
+    .live-at-ks {
+      top: 3vh;
+      left: 3vh;
+    }
+    .band-name {
+      bottom: 2vh;
+      right: 3vh;
     }
   }
-  .live-at-ks {
-    top: 3vh;
-    left: 3vh;
+  &.studio-cover {
+    background-image: url('../img/studio-cover.jpg')
   }
-  .band-name {
-    bottom: 2vh;
-    right: 3vh;
+  &.live-cover {
+    background-image: url('../img/live-cover.jpg')
+  }
+  &.practice-cover {
+    background-image: url('../img/practice-cover.jpg')
   }
 }
 
@@ -88,14 +97,15 @@ section {
   background-image: url('../img/cr_header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 50vh;
+  .container-fluid {
+    min-height: 50vh;
+  }
   .gradient-overlay {
     background: rgb(20,20,20);
     background: -moz-linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0) 100%);
     background: -webkit-linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0) 100%);
     background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(255,255,255,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141414",endColorstr="#ffffff",GradientType=1);
-
   }
 }
 .anim {
