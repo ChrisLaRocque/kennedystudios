@@ -57,9 +57,10 @@ button {
     background-color: white;
   }
 }
+
 //General section styles
 section {
-  margin: 3vh 0;
+  margin: 4vh 0;
   &:first-of-type {
     margin-top: 0;
   }
@@ -71,21 +72,28 @@ section {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 6px solid white;
+  border-radius: 14px;
+  .live-at-ks, .band-name {
+    position: absolute;
+    h3 {
+      font-size: 5vh;
+    }
+  }
+  .live-at-ks {
+    top: 3vh;
+    left: 3vh;
+  }
+  .band-name {
+    bottom: 2vh;
+    right: 3vh;
+  }
   &.sessions-cover {
-    background-image: url('../img/MM_Cover.png');
-    .live-at-ks, .band-name {
-      position: absolute;
-      h3 {
-        font-size: 5vh;
-      }
+    &.man-mountain {
+      background-image: url('../img/MM_Cover.png');
     }
-    .live-at-ks {
-      top: 3vh;
-      left: 3vh;
-    }
-    .band-name {
-      bottom: 2vh;
-      right: 3vh;
+    &.pray-for-sound {
+      background-image: url('../img/pfs_cover.png');
     }
   }
   &.studio-cover {
@@ -97,6 +105,9 @@ section {
   &.practice-cover {
     background-image: url('../img/practice-cover.jpg')
   }
+}
+.fifty-blurb {
+  padding: 0 4vh;
 }
 
 // Header section styles

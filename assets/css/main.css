@@ -66,7 +66,7 @@ button:hover {
 }
 
 section {
-  margin: 3vh 0;
+  margin: 4vh 0;
 }
 
 section:first-of-type {
@@ -78,28 +78,34 @@ section:first-of-type {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 6px solid white;
+  border-radius: 14px;
 }
 
-.fifty-img.sessions-cover {
-  background-image: url("../img/MM_Cover.png");
-}
-
-.fifty-img.sessions-cover .live-at-ks, .fifty-img.sessions-cover .band-name {
+.fifty-img .live-at-ks, .fifty-img .band-name {
   position: absolute;
 }
 
-.fifty-img.sessions-cover .live-at-ks h3, .fifty-img.sessions-cover .band-name h3 {
+.fifty-img .live-at-ks h3, .fifty-img .band-name h3 {
   font-size: 5vh;
 }
 
-.fifty-img.sessions-cover .live-at-ks {
+.fifty-img .live-at-ks {
   top: 3vh;
   left: 3vh;
 }
 
-.fifty-img.sessions-cover .band-name {
+.fifty-img .band-name {
   bottom: 2vh;
   right: 3vh;
+}
+
+.fifty-img.sessions-cover.man-mountain {
+  background-image: url("../img/MM_Cover.png");
+}
+
+.fifty-img.sessions-cover.pray-for-sound {
+  background-image: url("../img/pfs_cover.png");
 }
 
 .fifty-img.studio-cover {
@@ -112,6 +118,10 @@ section:first-of-type {
 
 .fifty-img.practice-cover {
   background-image: url("../img/practice-cover.jpg");
+}
+
+.fifty-blurb {
+  padding: 0 4vh;
 }
 
 #header {

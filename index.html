@@ -20,26 +20,7 @@
 </head>
 <body>  
   
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">KENNEDY STUDIOS</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#studio-title">Studio<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#live-title">Live Sessions</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#practice-title">Practice Spaces</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="load" id="nav"></div>
 
   <section id="header" class="vertical-center">
     <div class="container-fluid">
@@ -70,19 +51,14 @@
     </div>
   </section>
 
-  <section id="studio-title">
-    <div class="container">
+  <section id="studio">
+    <div class="container-fluid">
       <div class="row">
         <div class="col text-center">
           <h2>THE STUDIO</h2>
           <hr class="mx-auto">
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="studio">
-    <div class="container-fluid">
       <div class="row">
         <div class="col-xl-8 col-12 fifty-img studio-cover anim" data-delay=".75s">
         </div>
@@ -103,19 +79,14 @@
     </div>
   </section>
 
-  <section id="live-title">
-    <div class="container">
+  <section id="live">
+    <div class="container-fluid">
       <div class="row">
         <div class="col text-center">
           <h2>LIVE AT KENNEDY</h2>
           <hr class="mx-auto">
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="live">
-    <div class="container-fluid">
       <div class="row">
         <div class="col-xl-4 col-12 fifty-blurb anim" data-delay="1s">
           <h2>LIVE SESSIONS</h2>
@@ -137,7 +108,7 @@
   <section id="man-mountain">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-8 col-12 fifty-img sessions-cover anim" data-delay=".75s">
+        <div class="col-xl-8 col-12 fifty-img sessions-cover man-mountain anim" data-delay=".75s">
           <div class="live-at-ks">
             <h3>LIVE AT KENNEDY</h3>
           </div>
@@ -149,13 +120,9 @@
           <h2>MAN MOUNTAIN</h2>
           <hr>
           <p>Man Mountain is a band of brothers and friends from the southeast corner of Michigan, playing epic and emotive
-            instrumental rock music. What started in the beginning of 2012 as two people jamming songs by The Appleseed Cast in a
-            basement, turned into four people playing a full set of original songs in someone else’s basement later that summer.
-            That first set of music was recorded and released in the spring 2013 as an EP
+            instrumental rock music. Their first set of music was recorded and released in the spring 2013 as an EP
             titled “To Call Each Thing By Its Right Name”. Since then they’ve played all over Michigan (and thirteen other
-            states),
-            and have written and recorded their first full length album "Infinity Mirror", which was released through Spartan
-            Records
+            states), and have written and recorded their first full length album "Infinity Mirror", which was released through Spartan Records
             on March 16th, 2018.</p>
           <p>The band stopped by our studio on their recent North American Tour to play two tracks; "Man of Science, Man of Faith"
             and "To Be Made As New".</p>
@@ -169,12 +136,31 @@
     </div>
   </section>
 
-  <section id="practice-title">
-    <div class="container">
+  <section id="pray-for-sound">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col text-center">
-          <h2>PRACTICE SPACES</h2>
-          <hr class="mx-auto">
+        <div class="col-xl-4 col-12 fifty-blurb anim" data-delay="1s">
+          <h2>PRAY FOR SOUND</h2>
+          <hr>
+          <p>Without ever uttering a word, Pray For Sound channel music’s curative power through instrumental transmissions of lush
+          post-rock, cinematic production, glistening synth pop, and organic tribal percussion. The Boston quartet —Bruce Malley,
+          Steve Aliperta, Joe Aylward, and
+          Nick Stewart—fully realize the scope of that potential to heal on their independent fourth fulllength, Waves.</p>
+          <p>They paid someone $500 for that bio.</p>
+          <p>Check out their live performances of "Waves", "Spiral" and "All The Days" at the link below.</p>
+          <a>
+            <button>
+              Watch Now
+            </button>
+          </a>
+        </div>
+        <div class="col-xl-8 col-12 fifty-img sessions-cover pray-for-sound anim" data-delay=".75s">
+          <div class="live-at-ks">
+            <h3>LIVE AT KENNEDY</h3>
+          </div>
+          <div class="band-name">
+            <h3>PRAY FOR SOUND</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -183,11 +169,16 @@
   <section id="practice">
     <div class="container-fluid">
       <div class="row">
+        <div class="col text-center">
+          <h2>PRACTICE SPACES</h2>
+          <hr class="mx-auto">
+        </div>
+      </div>
+      <div class="row">
         <div class="col-xl-4 col-12 fifty-blurb anim" data-delay="1s">
           <h2>PRACTICE SPACES</h2>
           <hr>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quis sapiente corporis velit officia, sed
-            delectus excepturi quisquam hic? Ea consectetur nihil dolorem fugit tempore ipsa aperiam hic, autem sit?</p>
+          <p>We aim to provide practice spaces that take the stress out of rehearsing and let you get down to creating. Each room has a full PA system as well as backlined drum shells, guitar cabs, and a bass rig. Bands are also able to store their gear on site, monitored by 24/7 security. Learn more about our rehearsal spaces below.</p>
           <a>
             <button>
               LEARN MORE
@@ -200,15 +191,7 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col">
-          <h3>&copy; 2019 KENNEDY STUDIOS</h3>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <div class="load" id="footer"></div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -238,6 +221,8 @@
     })
 
   </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
