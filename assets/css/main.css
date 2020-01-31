@@ -160,6 +160,10 @@ section:first-of-type {
   margin-bottom: 3vh;
 }
 
+footer {
+  margin-bottom: 4vh;
+}
+
 footer i {
   font-size: 4vh;
   margin: 0 3vh;
