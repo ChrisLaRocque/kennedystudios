@@ -116,13 +116,14 @@ section {
 }
 .fifty-blurb {
   padding: 0 4vh;
+  margin: auto 0;
 }
 
 // Header section styles
 #header {
-  background-image: url('../img/cr_header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   min-height: 50vh;
   &.vertical-center {
     display: flex;
@@ -135,6 +136,14 @@ section {
 
 .session-row {
   margin-bottom: 3vh;
+}
+
+// Footer
+footer {
+  i {
+    font-size: 4vh;
+    margin: 0 3vh;
+  }
 }
 
 @keyframes  anim1 {
