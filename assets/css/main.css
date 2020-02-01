@@ -194,4 +194,22 @@ footer i {
     opacity: 1;
   }
 }
+
+body.links {
+  height: 100vh;
+}
+
+body.links .link-header {
+  font-size: 3.25vh;
+  margin: 2vh 0;
+}
+
+body.links hr {
+  width: 35%;
+}
+
+body.links button.link-butt {
+  font-size: 3vh;
+  border-width: 5px;
+}
 /*# sourceMappingURL=main.css.map */
