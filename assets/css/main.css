@@ -5,14 +5,6 @@
 
 .page__live .vid-img {
   height: 45vh;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: background-size 2s ease-in;
-  -moz-transition: background-size 2s ease-in;
-  -ms-transition: background-size 2s ease-in;
-  -o-transition: background-size 2s ease-in;
-  -webkit-transition: background-size 2s ease-in;
 }
 
 .page__live .vid-img h2 {
@@ -22,17 +14,21 @@
 }
 
 .page__live .vid-img.wf-cover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(127, 134, 136, 0)), to(#0e1115)), url("../img/wf-bg.jpg");
-  background: linear-gradient(180deg, rgba(127, 134, 136, 0) 0%, #0e1115 100%), url("../img/wf-bg.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(127, 134, 136, 0)), to(#0e1115)), url("../img/wf-bg.jpg") center/100% no-repeat;
+  background: linear-gradient(180deg, rgba(127, 134, 136, 0) 0%, #0e1115 100%), url("../img/wf-bg.jpg") center/100% no-repeat;
+  -webkit-transition: background-size 2s ease-in;
+  transition: background-size 2s ease-in;
 }
 
 .page__live .vid-img.mm-cover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(127, 134, 136, 0)), to(#0e1115)), url("../img/mm-bg.jpg");
-  background: linear-gradient(180deg, rgba(127, 134, 136, 0) 0%, #0e1115 100%), url("../img/mm-bg.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(127, 134, 136, 0)), to(#0e1115)), url("../img/mm-bg.jpg") center/100% no-repeat;
+  background: linear-gradient(180deg, rgba(127, 134, 136, 0) 0%, #0e1115 100%), url("../img/mm-bg.jpg") center/100% no-repeat;
+  -webkit-transition: background-size 2s ease-in;
+  transition: background-size 2s ease-in;
 }
 
 .page__live .vid-img:hover {
-  background-size: 125%;
+  background-size: 115%;
 }
 
 .page__live .fa-play-circle {
