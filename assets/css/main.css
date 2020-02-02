@@ -1,26 +1,34 @@
-.page__live #live-header h1 {
-  font-size: 6vh;
-}
-
 .page__live button {
   width: 50%;
   font-size: 2.5vh;
 }
 
-.page__live .fifty-img.wf-cover {
-  background-image: url("../img/wf_cover.png");
+.page__live .vid-img {
+  height: 45vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.page__live .fifty-img.mm-cover {
-  background-image: url("../img/mm_cover.png");
+.page__live .vid-img h2 {
+  position: absolute;
+  font-size: 5vh;
+  margin-bottom: 2vh;
 }
 
-.page__live .row.session {
-  margin-bottom: 6vh;
+.page__live .vid-img.wf-cover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(127, 134, 136, 0)), to(#0e1115)), url("../img/wf-bg.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(127, 134, 136, 0) 0%, #0e1115 100%), url("../img/wf-bg.jpg") no-repeat center;
+}
+
+.page__live .vid-img.mm-cover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(127, 134, 136, 0)), to(#0e1115)), url("../img/mm-bg.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(127, 134, 136, 0) 0%, #0e1115 100%), url("../img/mm-bg.jpg") no-repeat center;
 }
 
 .page__live .fa-play-circle {
-  font-size: 5vh;
+  font-size: 6vh;
+  display: block;
 }
 
 .page__live .embed-responsive-16by9 {
@@ -31,7 +39,7 @@ nav {
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
   font-size: 3vh;
-  margin-bottom: 4vh;
+  margin: 1vh;
 }
 
 nav .socials i {
@@ -41,10 +49,37 @@ nav .socials i {
 
 nav a.navbar-brand {
   font-size: 4.5vh;
+  border: 4px solid white;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1vh 3vh;
+  color: #1F2630;
+  background-color: white;
 }
 
 nav a:hover {
   opacity: .75;
+}
+
+body.links {
+  height: 100vh;
+}
+
+body.links .link-header {
+  font-size: 3.25vh;
+  margin: 2vh 0;
+}
+
+body.links hr {
+  width: 35%;
+}
+
+body.links button.link-butt {
+  font-size: 3vh;
+  border-width: 5px;
+  margin-bottom: 15px;
 }
 
 * {
@@ -61,6 +96,7 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: 'Lato', sans-serif;
+  height: 100vh;
 }
 
 a {
@@ -68,8 +104,6 @@ a {
 }
 
 a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   color: inherit;
   text-decoration: none;
 }
@@ -127,78 +161,8 @@ section:first-of-type {
   margin-top: 0;
 }
 
-.fifty-img {
-  height: 36vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.fifty-img .live-at-ks, .fifty-img .band-name {
-  position: absolute;
-}
-
-.fifty-img .live-at-ks h3, .fifty-img .band-name h3 {
-  font-size: 5vh;
-}
-
-.fifty-img .live-at-ks {
-  top: 3vh;
-  left: 3vh;
-}
-
-.fifty-img .band-name {
-  bottom: 2vh;
-  right: 3vh;
-}
-
-.fifty-img.sessions-cover.man-mountain {
-  background-image: url("../img/MM_Cover.png");
-}
-
-.fifty-img.sessions-cover.pray-for-sound {
-  background-image: url("../img/pfs_cover.png");
-}
-
-.fifty-img.studio-cover {
-  background-image: url("../img/studio-cover.jpg");
-}
-
-.fifty-img.live-cover {
-  background-image: url("../img/live-cover.jpg");
-}
-
-.fifty-img.practice-cover {
-  background-image: url("../img/practice-cover.jpg");
-}
-
-.fifty-blurb {
-  padding: 0 4vh;
-  margin: auto 0;
-}
-
-#header {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 50vh;
-}
-
-#header.vertical-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .anim {
   opacity: 0;
-}
-
-.session-row {
-  margin-bottom: 3vh;
 }
 
 footer {
@@ -234,24 +198,5 @@ footer i {
             transform: translateY(0);
     opacity: 1;
   }
-}
-
-body.links {
-  height: 100vh;
-}
-
-body.links .link-header {
-  font-size: 3.25vh;
-  margin: 2vh 0;
-}
-
-body.links hr {
-  width: 35%;
-}
-
-body.links button.link-butt {
-  font-size: 3vh;
-  border-width: 5px;
-  margin-bottom: 15px;
 }
 /*# sourceMappingURL=main.css.map */
