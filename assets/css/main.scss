@@ -2,6 +2,7 @@
 @import "breakpoints.scss";
 @import "live.scss";
 @import "nav.scss";
+@import "links.scss";
 
 // General overrides
 * {
@@ -71,69 +72,8 @@ section {
     margin-top: 0;
   }
 }
-
-// 5050 styles
-.fifty-img {
-  height: 36vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  // border: 4px solid white;
-  // border-radius: 8px;
-  .live-at-ks, .band-name {
-    position: absolute;
-    h3 {
-      font-size: 5vh;
-    }
-  }
-  .live-at-ks {
-    top: 3vh;
-    left: 3vh;
-  }
-  .band-name {
-    bottom: 2vh;
-    right: 3vh;
-  }
-  &.sessions-cover {
-    &.man-mountain {
-      background-image: url('../img/MM_Cover.png');
-    }
-    &.pray-for-sound {
-      background-image: url('../img/pfs_cover.png');
-    }
-  }
-  &.studio-cover {
-    background-image: url('../img/studio-cover.jpg')
-  }
-  &.live-cover {
-    background-image: url('../img/live-cover.jpg')
-  }
-  &.practice-cover {
-    background-image: url('../img/practice-cover.jpg')
-  }
-}
-.fifty-blurb {
-  padding: 0 4vh;
-  margin: auto 0;
-}
-
-// Header section styles
-#header {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 50vh;
-  &.vertical-center {
-    display: flex;
-    align-items: center;
-  }
-}
 .anim {
   opacity: 0;
-}
-
-.session-row {
-  margin-bottom: 3vh;
 }
 
 // Footer
@@ -153,22 +93,5 @@ footer {
   to {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-
-// Links Page
-body.links {
-  height: 100vh;
-  .link-header {
-    font-size: 3.25vh;
-    margin: 2vh 0;
-  }
-  hr {
-    width: 35%;
-  }
-  button.link-butt {
-    font-size: 3vh;
-    border-width: 5px;
-    margin-bottom: 15px;
   }
 }

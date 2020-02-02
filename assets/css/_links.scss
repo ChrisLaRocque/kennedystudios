@@ -1,0 +1,15 @@
+body.links {
+  height: 100vh;
+  .link-header {
+    font-size: 3.25vh;
+    margin: 2vh 0;
+  }
+  hr {
+    width: 35%;
+  }
+  button.link-butt {
+    font-size: 3vh;
+    border-width: 5px;
+    margin-bottom: 15px;
+  }
+}
