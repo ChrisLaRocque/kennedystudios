@@ -1,5 +1,7 @@
 // Imports
 @import "breakpoints.scss";
+@import "live.scss";
+@import "nav.scss";
 
 // General overrides
 * {
@@ -16,14 +18,6 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: 'Lato', sans-serif;
-}
-nav {
-  font-family: 'Titillium Web', sans-serif;
-  text-transform: uppercase;
-  font-size: 3vh;
-  a:hover {
-    opacity: .75;
-  }
 }
 a {
   color: inherit;
@@ -76,7 +70,7 @@ section {
 
 // 5050 styles
 .fifty-img {
-  height: 50vh;
+  height: 36vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

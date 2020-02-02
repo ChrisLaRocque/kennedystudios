@@ -1,3 +1,45 @@
+.page__live #live-header h1 {
+  font-size: 7vh;
+}
+
+.page__live button {
+  width: 50%;
+  font-size: 2.5vh;
+  margin: 1vh auto;
+}
+
+.page__live .fifty-img.wf-cover {
+  background-image: url("../img/wf_cover.png");
+}
+
+.page__live .fifty-img.mm-cover {
+  background-image: url("../img/mm_cover.png");
+}
+
+.page__live .row.session {
+  margin-bottom: 6vh;
+}
+
+nav {
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  font-size: 3vh;
+  margin-bottom: 4vh;
+}
+
+nav .socials i {
+  font-size: 4vh;
+  margin: auto 1vh;
+}
+
+nav a.navbar-brand {
+  font-size: 4.5vh;
+}
+
+nav a:hover {
+  opacity: .75;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,16 +54,6 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: 'Lato', sans-serif;
-}
-
-nav {
-  font-family: 'Titillium Web', sans-serif;
-  text-transform: uppercase;
-  font-size: 3vh;
-}
-
-nav a:hover {
-  opacity: .75;
 }
 
 a {
@@ -85,7 +117,7 @@ section:first-of-type {
 }
 
 .fifty-img {
-  height: 50vh;
+  height: 36vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -211,5 +243,6 @@ body.links hr {
 body.links button.link-butt {
   font-size: 3vh;
   border-width: 5px;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=main.css.map */
