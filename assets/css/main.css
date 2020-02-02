@@ -1,11 +1,10 @@
 .page__live #live-header h1 {
-  font-size: 7vh;
+  font-size: 6vh;
 }
 
 .page__live button {
   width: 50%;
   font-size: 2.5vh;
-  margin: 1vh auto;
 }
 
 .page__live .fifty-img.wf-cover {
@@ -18,6 +17,14 @@
 
 .page__live .row.session {
   margin-bottom: 6vh;
+}
+
+.page__live .fa-play-circle {
+  font-size: 5vh;
+}
+
+.page__live .embed-responsive-16by9 {
+  display: none;
 }
 
 nav {
@@ -87,8 +94,12 @@ h1 {
 }
 
 hr {
-  border: 3px solid white;
-  width: 50%;
+  border: 2px solid white;
+  width: 35%;
+}
+
+p {
+  font-size: 1.85vh;
 }
 
 button {
@@ -121,8 +132,6 @@ section:first-of-type {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 6px solid white;
-  border-radius: 14px;
 }
 
 .fifty-img .live-at-ks, .fifty-img .band-name {

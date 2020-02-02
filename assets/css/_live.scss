@@ -1,7 +1,7 @@
 .page__live {
   #live-header {
     h1 {
-      font-size: 7vh;
+      font-size: 6vh;
     }
   }
   button {
@@ -9,16 +9,22 @@
   font-size: 2.5vh;
   }
   .fifty-img {
-  &.wf-cover {
-    background-image: url('../img/wf_cover.png')
+    &.wf-cover {
+      background-image: url('../img/wf_cover.png')
+    }
+    &.mm-cover {
+      background-image: url('../img/mm_cover.png')
+    }
   }
-  &.mm-cover {
-    background-image: url('../img/mm_cover.png')
+  .row {
+    &.session {
+      margin-bottom: 6vh;
+    }
   }
-}
-.row {
-  &.session {
-    margin-bottom: 6vh;
+  .fa-play-circle {
+    font-size: 5vh;
   }
-}
+  .embed-responsive-16by9 {
+    display: none;
+  }
 }
