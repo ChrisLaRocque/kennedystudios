@@ -1,5 +1,13 @@
 .page__live #live-header h1 {
   font-size: 6vh;
+  border: 4px solid white;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1vh 3vh;
+  color: #1C2B23;
+  background-color: white;
 }
 
 .page__live button {
@@ -20,7 +28,7 @@
 }
 
 .page__live .fa-play-circle {
-  font-size: 5vh;
+  font-size: 6vh;
 }
 
 .page__live .embed-responsive-16by9 {
@@ -31,7 +39,6 @@ nav {
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
   font-size: 3vh;
-  margin-bottom: 4vh;
 }
 
 nav .socials i {
@@ -41,6 +48,14 @@ nav .socials i {
 
 nav a.navbar-brand {
   font-size: 4.5vh;
+  border: 4px solid white;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1vh 3vh;
+  color: #1F2630;
+  background-color: white;
 }
 
 nav a:hover {
@@ -61,6 +76,7 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: 'Lato', sans-serif;
+  height: 100vh;
 }
 
 a {
@@ -68,8 +84,6 @@ a {
 }
 
 a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   color: inherit;
   text-decoration: none;
 }
