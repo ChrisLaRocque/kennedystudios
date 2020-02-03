@@ -5,12 +5,14 @@
   }
   .vid-img {
     height: 45vh;
+    -webkit-transition: background-size .75s ease-in-out;
+    transition: background-size .75s ease-in-out;
     h2 {
       position: absolute;
       font-size: 5vh;
       padding-bottom: 7vh;
-      -webkit-transition: opacity .5s, padding-bottom 1s;
-      transition: opacity .5s, padding-bottom 1s;
+      -webkit-transition: opacity .75s, padding-bottom 1s;
+      transition: opacity .75s, padding-bottom 1s;
     }
     &.wf-cover {
       background: linear-gradient(
@@ -38,6 +40,23 @@
         transform: rotate(360deg);
         margin-top: 0;
       }
+      // IDK why but the transitions break unless I do the whole thing
+      &.wf-cover {
+        background: linear-gradient(
+            180deg,
+            rgba(127, 134, 136, 0) 0%,
+            rgba(14, 17, 21, 1) 100%
+          ),
+          url("../img/wf-bg.jpg") center/108% no-repeat;
+      }
+      &.mm-cover {
+      background: linear-gradient(
+          180deg,
+          rgba(127, 134, 136, 0) 0%,
+          rgba(14, 17, 21, 1) 100%
+        ),
+        url("../img/mm-bg.jpg") center/108% no-repeat;
+    }
     }
   }
   .fa-play-circle {
