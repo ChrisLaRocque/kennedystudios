@@ -10,7 +10,9 @@
 .page__live .vid-img h2 {
   position: absolute;
   font-size: 5vh;
-  margin-bottom: 2vh;
+  padding-bottom: 7vh;
+  -webkit-transition: opacity .5s, padding-bottom 1s;
+  transition: opacity .5s, padding-bottom 1s;
 }
 
 .page__live .vid-img.wf-cover {
@@ -23,13 +25,28 @@
   background: linear-gradient(180deg, rgba(127, 134, 136, 0) 0%, #0e1115 100%), url("../img/mm-bg.jpg") center/100% no-repeat;
 }
 
-.page__live .vid-img:hover {
-  background-size: 115%;
+.page__live .vid-img:hover h2 {
+  opacity: 0;
+  padding-bottom: 0;
+}
+
+.page__live .vid-img:hover .fa-play-circle {
+  opacity: 1;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  margin-top: 0;
 }
 
 .page__live .fa-play-circle {
+  opacity: 0;
+  margin-top: 30vh;
   font-size: 6vh;
   display: block;
+  -webkit-transition: opacity .5s, transform .75s ease-in-out, margin-top .5s ease-in-out;
+  -webkit-transition: opacity .5s, margin-top .5s ease-in-out, -webkit-transform .75s ease-in-out;
+  transition: opacity .5s, margin-top .5s ease-in-out, -webkit-transform .75s ease-in-out;
+  transition: opacity .5s, transform .75s ease-in-out, margin-top .5s ease-in-out;
+  transition: opacity .5s, transform .75s ease-in-out, margin-top .5s ease-in-out, -webkit-transform .75s ease-in-out;
 }
 
 .page__live .embed-responsive-16by9 {

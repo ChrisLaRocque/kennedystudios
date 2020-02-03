@@ -28,7 +28,7 @@
     <div class="container-fluid">
       <div class="row session">
         
-        <div class="col-xl-6 col-12 vid-img wf-cover anim d-flex justify-content-center" data-delay=".75s">
+        <!-- <div class="col-xl-6 col-12 vid-img wf-cover anim d-flex justify-content-center" data-delay=".75s" title="Photo by Adam Parshall | Parshally There Creative">
           <i class="fas fa-play-circle align-self-center"></i>
           <h2 class="align-self-end">WEAKENED FRIENDS</h2>
           <div class="embed-responsive embed-responsive-16by9">
@@ -43,7 +43,10 @@
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2eEa4Zm75j8?rel=0"
               allowfullscreen></iframe>
           </div>
-        </div>
+        </div> -->
+
+        <session id="wf" data-tube="yGJWUQs-BI0" data-name="Weakened Friends" title="Photo by Adam Parshall | Parshally There Creative"></session>
+        <session id="mm" data-tube="2eEa4Zm75j8" data-name="Man Mountain" title="Photo by Adam Parshall | Parshally There Creative"></session>
       </div>
     </div>
   </section>
@@ -62,11 +65,15 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-  <script>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/live.js"></script>
+  <!-- <script>
     const images = document.querySelectorAll('.anim');
 
     observer = new IntersectionObserver((entries) => {
-      console.log(entries.intersectionRatio);
       entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
           entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
@@ -80,11 +87,9 @@
       observer.observe(image);
     })
 
-  </script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="assets/js/main.js"></script>
+  </script> -->
   <script src="https://kit.fontawesome.com/e24b1bdb42.js" crossorigin="anonymous"></script>
+  
 </body>
 
 </html>

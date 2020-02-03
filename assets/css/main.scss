@@ -1,4 +1,5 @@
 // Imports
+@import "colors.scss";
 @import "breakpoints.scss";
 @import "live.scss";
 @import "nav.scss";
@@ -17,7 +18,7 @@ body {
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(33,41,51,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#212933",GradientType=1);
   background-repeat: no-repeat;
-  color: white;
+  color: $white;
   font-family: 'Lato', sans-serif;
   height: 100vh;
 }
@@ -43,16 +44,16 @@ h1 {
   font-size: 10vh;
 }
 hr {
-  border: 2px solid white;
+  border: 2px solid $white;
   width: 35%;
 }
 p {
   font-size: 1.85vh;
 }
 button {
-  color: white;
+  color: $white;
   background-color: transparent;
-  border: 3px solid white;
+  border: 3px solid $white;
   border-radius: 14px;
   font-size: 2vh;
   padding: 1vh;
@@ -60,8 +61,8 @@ button {
   text-transform: uppercase;
   width: 100%;
   &:hover {
-    color: rgb(0,0,0);
-    background-color: white;
+    color: $black;
+    background-color: $white;
   }
 }
 
