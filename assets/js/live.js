@@ -17,9 +17,6 @@ for (var i = 0; i < session.length; i++){
 	</div>
 	`;
 	
-	// select the element that will be replaced
-	var el = document.querySelector('session');
-
 	// replace el with newEL
-	el.replaceWith(template)
+	$(".session").append(template);
 };
