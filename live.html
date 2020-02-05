@@ -1,92 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kennedy Studios</title>
 
-  <title>Kennedy Studios</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Titillium+Web:900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato|Titillium+Web:900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Main css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+  </head>
 
-  <!-- Main css -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+  <body class="page__live">
+    <div class="load" id="nav"></div>
 
-</head>
-
-<body class="page__live">
-
-  <div class="load" id="nav"></div>
-  
-  <section id="featured">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 pl-0">
-          <h2 class="featured-title">LATEST SESSION</h2>
-        </div>
-        <div class="col-lg-8 mx-auto col-12">
-
-          <!-- <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yGJWUQs-BI0?rel=0" allowfullscreen></iframe>
-          </div> -->
+    <section id="live-sessions">
+      <div class="container-fluid">
+        <div class="row session">
+          <session
+            id="wf"
+            data-tube="yGJWUQs-BI0"
+            data-name="Weakened Friends"
+            title="Photo by Adam Parshall | Parshally There Creative"
+            data-delay=".75s"
+          ></session>
+          <session
+            id="mm"
+            data-tube="2eEa4Zm75j8"
+            data-name="Man Mountain"
+            title="Photo by Kirsten Koschnitzke | Snowfox Photography"
+            data-delay="1.15s"
+          ></session>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="live-sessions">
-    <div class="container-fluid">
-      <div class="row session">
-        <session id="wf" data-tube="yGJWUQs-BI0" data-name="Weakened Friends" title="Photo by Adam Parshall | Parshally There Creative"></session>
-        <session id="mm" data-tube="2eEa4Zm75j8" data-name="Man Mountain" title="Photo by Kirsten Koschnitzke | Snowfox Photography"></session>
+    </section>
+
+    <section id="about" class="anim-right anim" data-delay="3s">
+      <div class="container">
+        <div class="row text-container d-flex align-items-center">
+          <h2 class="section-title col-lg-3 col-12">ABOUT KENNEDY STUDIOS</h2>
+          <div class="section-body col-lg-9 col-12 left">
+            <div class="section-subtitle">
+              Recording/rehearsal/video
+            </div>
+            <p class="section-blurb">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus illo placeat id, adipisci ipsam quam possimus esse aut
+              at ut deleniti doloribus dolorum eum voluptate laboriosam quis
+              ullam. Iure, numquam. <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ex
+              aut error repellendus tempora aliquam delectus obcaecati aperiam
+              exercitationem a accusantium maxime esse ullam sed cumque, nisi,
+              animi ratione modi!
+            </p>
+            <div
+              class="d-flex justify-content-between section-button-container"
+            >
+              <a href="mailto:booking@kennedystudios.productions">
+                <button>Book Time</button>
+              </a>
+              <a href="mailto:booking@kennedystudios.productions">
+                <button>Film a Session</button>
+              </a>
+              <a href="https://www.kennedystudios.productions/">
+                <button>See the studio</button>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="load" id="footer"></div>
+    <section id="blood" class="anim-left anim" data-delay="1s">
+      <div class="container">
+        <div class="row text-container d-flex align-items-center">
+          <div class="section-body col-lg-9 col-12 right">
+            <div class="section-subtitle">
+              KILL THE CHILDREN! DRINK THEIR BLOOD
+            </div>
+            <p class="section-blurb">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus illo placeat id, adipisci ipsam quam possimus esse aut
+              at ut deleniti doloribus dolorum eum voluptate laboriosam quis
+              ullam. Iure, numquam. <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ex
+              aut error repellendus tempora aliquam delectus obcaecati aperiam
+              exercitationem a accusantium maxime esse ullam sed cumque, nisi,
+              animi ratione modi!
+            </p>
+          </div>
+          <h2 class="section-title col-lg-3 col-12">TITLE RIGHT</h2>
+        </div>
+      </div>
+    </section>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <div class="load" id="footer"></div>
 
-  
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/live.js"></script>
-  <script>
-    const images = document.querySelectorAll('.anim');
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-    observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.intersectionRatio > 0) {
-          entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
-        }
-        else {
-          entry.target.style.animation = `none`;
-        }
-      })
-    })
-    images.forEach(image => {
-      observer.observe(image);
-    })
+    <!-- jQuery again? -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
-  </script>
-  <script src="https://kit.fontawesome.com/e24b1bdb42.js" crossorigin="anonymous"></script>
-  
-</body>
+    <!-- Baby's first scripts -->
+    <script src="assets/js/live.js"></script>
+    <script src="assets/js/main.js"></script>
 
+    <!-- Icon import -->
+    <script
+      src="https://kit.fontawesome.com/e24b1bdb42.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

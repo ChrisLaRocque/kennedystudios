@@ -1,33 +1,15 @@
-.page__live button {
-  width: 50%;
-  font-size: 2.5vh;
-}
-
-.page__live .featured-title {
-  font-size: 3.5vh;
-  border: 4px solid white;
-  border-radius: 8px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 1vh 3vh;
-  color: white;
-  background-color: #1F2630;
-  margin-left: .8vh;
-}
-
 .page__live .vid-img {
   height: 45vh;
-  -webkit-transition: background-size .75s ease-in-out;
-  transition: background-size .75s ease-in-out;
+  -webkit-transition: background-size 0.75s ease-in-out;
+  transition: background-size 0.75s ease-in-out;
 }
 
 .page__live .vid-img h2 {
   position: absolute;
   font-size: 5vh;
   padding-bottom: 7vh;
-  -webkit-transition: opacity .75s, padding-bottom 1s;
-  transition: opacity .75s, padding-bottom 1s;
+  -webkit-transition: opacity 0.75s, padding-bottom 1s;
+  transition: opacity 0.75s, padding-bottom 1s;
 }
 
 .page__live .vid-img.wf-cover {
@@ -67,11 +49,11 @@
   margin-top: 30vh;
   font-size: 6vh;
   display: block;
-  -webkit-transition: opacity .5s, transform .75s ease-in-out, margin-top .5s ease-in-out;
-  -webkit-transition: opacity .5s, margin-top .5s ease-in-out, -webkit-transform .75s ease-in-out;
-  transition: opacity .5s, margin-top .5s ease-in-out, -webkit-transform .75s ease-in-out;
-  transition: opacity .5s, transform .75s ease-in-out, margin-top .5s ease-in-out;
-  transition: opacity .5s, transform .75s ease-in-out, margin-top .5s ease-in-out, -webkit-transform .75s ease-in-out;
+  -webkit-transition: opacity 0.5s, transform 0.75s ease-in-out, margin-top 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s, margin-top 0.5s ease-in-out, -webkit-transform 0.75s ease-in-out;
+  transition: opacity 0.5s, margin-top 0.5s ease-in-out, -webkit-transform 0.75s ease-in-out;
+  transition: opacity 0.5s, transform 0.75s ease-in-out, margin-top 0.5s ease-in-out;
+  transition: opacity 0.5s, transform 0.75s ease-in-out, margin-top 0.5s ease-in-out, -webkit-transform 0.75s ease-in-out;
 }
 
 .page__live .embed-panel {
@@ -79,10 +61,10 @@
 }
 
 nav {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
   font-size: 3vh;
-  margin: 1vh;
+  margin: 2vh 1vh;
 }
 
 nav .socials i {
@@ -98,12 +80,12 @@ nav a.navbar-brand {
   width: -moz-fit-content;
   width: fit-content;
   padding: 1vh 3vh;
-  color: #1F2630;
+  color: #1f2630;
   background-color: white;
 }
 
 nav a:hover {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 body.links {
@@ -123,6 +105,8 @@ body.links button.link-butt {
   font-size: 3vh;
   border-width: 5px;
   margin-bottom: 15px;
+  width: 100%;
+  padding: 1vh;
 }
 
 * {
@@ -131,6 +115,7 @@ body.links button.link-butt {
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   background: black;
   background: -webkit-gradient(linear, left bottom, left top, from(black), to(#212933));
@@ -138,8 +123,9 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#212933",GradientType=1);
   background-repeat: no-repeat;
   color: white;
-  font-family: 'Lato', sans-serif;
-  height: 100vh;
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  min-height: 100vh;
 }
 
 a {
@@ -161,8 +147,11 @@ a.navbar-brand {
   }
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Titillium Web', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
 }
 
@@ -183,12 +172,11 @@ button {
   color: white;
   background-color: transparent;
   border: 3px solid white;
-  border-radius: 14px;
-  font-size: 2vh;
-  padding: 1vh;
-  font-family: 'Titillium Web', sans-serif;
+  border-radius: 8px;
+  font-size: 2.4vh;
+  padding: 1vh 5vh;
+  font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
-  width: 100%;
 }
 
 button:hover {
@@ -201,7 +189,45 @@ section {
 }
 
 section:first-of-type {
-  margin-top: 0;
+  margin-top: 2.5vh;
+}
+
+.text-container .section-title {
+  font-size: 3.5vh;
+  color: white;
+  padding: 1vh 3vh;
+}
+
+.text-container .section-body {
+  padding: 0.75vh 0;
+  margin: 2vh 0;
+}
+
+.text-container .section-body.left {
+  padding-left: 4vh;
+  border-left: 4px solid gray;
+}
+
+.text-container .section-body.right {
+  padding-right: 4vh;
+  border-right: 4px solid gray;
+}
+
+.text-container .section-body .section-subtitle {
+  font-size: 2.1vh;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: gray;
+  font-style: italic;
+  margin: 1.5vh 0 0.5vh;
+}
+
+.text-container .section-body .section-blurb {
+  font-size: 1.8vh;
+}
+
+.text-container .section-button-container {
+  margin: 4vh 0;
 }
 
 .anim {
@@ -209,7 +235,7 @@ section:first-of-type {
 }
 
 footer {
-  margin-bottom: 4vh;
+  margin: 4vh 0;
 }
 
 footer i {
@@ -219,8 +245,8 @@ footer i {
 
 @-webkit-keyframes anim1 {
   from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
     opacity: 0;
   }
   to {
@@ -232,13 +258,65 @@ footer i {
 
 @keyframes anim1 {
   from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
     opacity: 0;
   }
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes anim2 {
+  from {
+    -webkit-transform: translatex(-190px);
+            transform: translatex(-190px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    -webkit-transform: translatex(-190px);
+            transform: translatex(-190px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes anim3 {
+  from {
+    -webkit-transform: translatex(190px);
+            transform: translatex(190px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim3 {
+  from {
+    -webkit-transform: translatex(190px);
+            transform: translatex(190px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
     opacity: 1;
   }
 }

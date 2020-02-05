@@ -1,8 +1,8 @@
 nav {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
   font-size: 3vh;
-  margin: 1vh;
+  margin: 2vh 1vh;
   .socials {
     i {
       font-size: 4vh;
@@ -19,6 +19,6 @@ nav {
     background-color: $white;
   }
   a:hover {
-    opacity: .75;
+    opacity: 0.75;
   }
 }
