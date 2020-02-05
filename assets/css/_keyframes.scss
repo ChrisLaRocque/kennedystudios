@@ -1,0 +1,32 @@
+@keyframes anim1 {
+  from {
+    transform: translateY(-90px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    transform: translatex(-190px);
+    opacity: 0;
+  }
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim3 {
+  from {
+    transform: translatex(190px);
+    opacity: 0;
+  }
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}

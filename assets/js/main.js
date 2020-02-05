@@ -32,7 +32,7 @@ const animRight = document.querySelectorAll(".anim-right");
 observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.intersectionRatio > 0) {
-      entry.target.style.animation = `anim2 3s ${entry.target.dataset.delay} forwards ease-out`;
+      entry.target.style.animation = `anim2 2s ${entry.target.dataset.delay} forwards ease-out`;
     } else {
       entry.target.style.animation = `none`;
     }
@@ -48,7 +48,7 @@ const animLeft = document.querySelectorAll(".anim-left");
 observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.intersectionRatio > 0) {
-      entry.target.style.animation = `anim3 3s ${entry.target.dataset.delay} forwards ease-out`;
+      entry.target.style.animation = `anim3 1s ${entry.target.dataset.delay} forwards ease-out`;
     } else {
       entry.target.style.animation = `none`;
     }
