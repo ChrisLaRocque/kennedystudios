@@ -5,7 +5,7 @@ var ids = $(".load").map(function() {
 
 for (var i = 0; i < ids.length; i++) {
   const id = ids[i];
-  $.get(id + ".html", function(data) {
+  $.get("../" + id + ".html", function(data) {
     $("#" + id).replaceWith(data);
   });
 }
