@@ -15,6 +15,9 @@ nav {
     border-radius: 8px;
     width: fit-content;
     padding: 1vh 3vh;
+    @include breakpoint(phone){
+      padding: 1vh;
+    }
     color: $grade-at-top;
     background-color: $white;
   }

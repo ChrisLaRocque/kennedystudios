@@ -70,4 +70,13 @@
   .embed-panel {
     display: none;
   }
+  .section-button-container {
+    width: 100%;
+    a {
+      button {
+        padding: 1vh 1.5vh;
+        width: 100%;
+      }
+    }
+  }
 }
